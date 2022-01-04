@@ -14,6 +14,10 @@ local AutoFarmTSection2 = "hello"
 -- AutoFarmTB stuff
 AutoFarmTBSection:NewDropdown("AutoBuy", "Automatically buys the case selected", {"Starter", "Noobie", "Stepping", "Learning", "Funding", "Business", "Legendary", "Marcellus", "Mythic", "Eirene", "Aeschylus", "", "Olysseus",}, function(v)
 
+DupesSection:NewButton("DupeTradeBux", "Dupes tradebux (rejoin to see it)", function()
+    print("Clicked")
+end)
+
 while true do wait(0.7)
 local A_1 = (v)
 local Event = game:GetService("ReplicatedStorage").Events.OpenCase
