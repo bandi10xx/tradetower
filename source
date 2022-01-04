@@ -1,0 +1,286 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("UrthUI", "DarkTheme")
+local AutoFarmTB = Window:NewTab("AutoFarmTB")
+local AutoFarmT = Window:NewTab("AutoFarmT")
+local Dupes = Window:NewTab("Dupes")
+local AutoFarmTBSection = AutoFarmTB:NewSection("AutoFarm TradeBux")
+local AutoFarmTSection = AutoFarmT:NewSection("AutoFarm Tix (not finished)")
+local DupesSection = Dupes:NewSection("Dupes working, not bannable")
+local DupesSection2 = Dupes:NewSection("Dupes working, not bannable")
+local DupesSection3 = Dupes:NewSection("Dupes working, not bannable")
+local AutoFarmTSection2 = "hello"
+
+
+-- AutoFarmTB stuff
+AutoFarmTBSection:NewDropdown("AutoBuy", "Automatically buys the case selected", {"Starter", "Noobie", "Stepping", "Learning", "Funding", "Business", "Legendary", "Marcellus", "Mythic", "Eirene", "Aeschylus", "", "Olysseus",}, function(v)
+
+while true do wait(0.7)
+local A_1 = (v)
+local Event = game:GetService("ReplicatedStorage").Events.OpenCase
+Event:InvokeServer(A_1)
+end
+end)
+  
+AutoFarmTBSection:NewSlider("AutoSell", "the max rap for items to autosell", 50000, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+local A_1 = "SellUnder"
+local A_2 = (v)
+local Event = game:GetService("ReplicatedStorage").Events.InventoryActions
+Event:InvokeServer(A_1, A_2)
+end)
+
+AutoFarmTBSection:NewButton("AutoClick", "Automatically clicks for you", function()
+while true do wait()
+local Event = game:GetService("ReplicatedStorage").Events.ClientClick
+Event:FireServer()
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local A_1 = "AcceptRequest"
+local A_2 = "Basematter"
+local Event = game:GetService("ReplicatedStorage").Events.TradeActions
+Event:InvokeServer(A_1, A_2)
