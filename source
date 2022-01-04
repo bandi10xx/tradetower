@@ -6,9 +6,8 @@ local Dupes = Window:NewTab("Dupes")
 local AutoFarmTBSection = AutoFarmTB:NewSection("AutoFarm TradeBux")
 local AutoFarmTSection = AutoFarmT:NewSection("AutoFarm Tix (not finished)")
 local DupesSection = Dupes:NewSection("Dupes working, not bannable")
-local DupesSection2 = Dupes:NewSection("Dupes working, not bannable")
-local DupesSection3 = Dupes:NewSection("Dupes working, not bannable")
-local AutoFarmTSection2 = "hello"
+
+
 
 
 -- AutoFarmTB stuff
