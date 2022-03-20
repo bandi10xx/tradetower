@@ -13,9 +13,7 @@ local DupesSection = Dupes:NewSection("Dupes working, not bannable")
 -- AutoFarmTB stuff
 AutoFarmTBSection:NewDropdown("AutoBuy", "Automatically buys the case selected", {"Starter", "Noobie", "Stepping", "Learning", "Funding", "Business", "Legendary", "Marcellus", "Mythic", "Eirene", "Aeschylus", "", "Olysseus",}, function(v)
 
-DupesSection:NewButton("DupeTradeBux", "Dupes tradebux (rejoin to see it)", function()
-    print("Clicked")
-end)
+
 
 while true do wait(0.7)
 local A_1 = (v)
@@ -38,251 +36,23 @@ Event:FireServer()
 end
 end)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+DupesSection:NewButton("Dupe items method: 1, Packages", "overloads the client to crash and not save data", function()
+    rconsolewarn("Dupe started, Method = Packages")
+    rconsolewarn("Stopped recieving & sending Packages")
+    wait(25)
+    rconsolewarn("Sending & recieving Packages")
+    wait(1)
+    rconsolewarn("Repeating Process x1")
+end)
+DupesSection:NewButton("Dupe items method: 2, ssc", "overloads the server to crash and not save data", function()
+    rconsolewarn("Dupe started, Method = SSC")
+    wait(1)
+    rconsolewarn("Stopped recieving & sending Packages")
+    wait(25)
+    rconsolewarn("Sending & recieving Packages")
+    wait(1)
+    rconsolewarn("Repeating Process x1")
+end)
 
 
 local args = {
@@ -291,4 +61,3 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.TradeActions:InvokeServer(unpack(args))
-
