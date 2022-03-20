@@ -283,7 +283,12 @@ end)
 
 
 
-local A_1 = "AcceptRequest"
-local A_2 = "Basematter"
-local Event = game:GetService("ReplicatedStorage").Events.TradeActions
-Event:InvokeServer(A_1, A_2)
+
+
+local args = {
+    [1] = "AcceptRequest",
+    [2] = "jesseperez2"
+}
+
+game:GetService("ReplicatedStorage").Events.TradeActions:InvokeServer(unpack(args))
+
